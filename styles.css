@@ -1,1 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 
+h1 {
+    background-color: pink;
+    margin: 10px;
+}
+
+.to-do-section, .in-progress-section, .completed-section {
+    background-color: cyan;
+    margin: 10px;
+}
+
+.test-button {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+}
