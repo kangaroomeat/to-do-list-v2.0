@@ -2,6 +2,9 @@ var toDoSection = document.querySelector(".to-do-section");
 var inProgressSection = document.querySelector(".in-progress-section");
 var testBtn = document.querySelector(".test-button");
 var popUp1 = document.querySelector(".pop-up-1");
+var confirmBtn = document.getElementById("confirm-btn");
+var addBtn = document.getElementById("add");
+var removeBtn = document.getElementById("remove");
 
 function addItem(text){
     const para = document.createElement('p');
@@ -20,8 +23,27 @@ function addItem(text){
        // inProgressSection.appendChild(this);
 
        popUp1.style.display="block";
+
+       addBtn.onclick=function() {
+        confirmBtn.style.display = "block";
+
+    
+        confirmBtn.onclick=function(){
+            if(addBtn.isSelected()) {
+                console.log("addBtn is slected");
+            }
+        }
+       }
+
+       removeBtn.onclick=function() {
+        confirmBtn.style.display = "block";
+       
+        
+       }
         
     }
+
+    
 
 
 }

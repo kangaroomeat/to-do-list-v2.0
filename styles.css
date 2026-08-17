@@ -34,3 +34,7 @@ h1 {
     background-color: orange;
 
 }
+
+#confirm-btn {
+    display: none;
+}
