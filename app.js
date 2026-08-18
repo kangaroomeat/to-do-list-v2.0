@@ -29,14 +29,28 @@ function addItem(text){
 
     
         confirmBtn.onclick=function(){
-            if(addBtn.isSelected()) {
-                console.log("addBtn is slected");
+            if(addBtn.checked) {
+                //console.log("addBtn is slected");
+                inProgressSection.appendChild(para);
+                confirmBtn.style.display = "none";
+                popUp1.style.display = "none";
+                addBtn.checked = false;
             }
         }
        }
 
        removeBtn.onclick=function() {
         confirmBtn.style.display = "block";
+
+        confirmBtn.onclick=function(){
+            if(removeBtn.checked) {
+                para.remove();
+                confirmBtn.style.display = "none";
+                popUp1.style.display = "none";
+                removeBtn.checked = false;
+
+            }
+        }
        
         
        }
