@@ -32,10 +32,16 @@ function addItem(text){
             if(addBtn.checked) {
                 //console.log("addBtn is slected");
                 inProgressSection.appendChild(para);
+                //para.setAttribute("class", "progressSectPara");
                 confirmBtn.style.display = "none";
                 popUp1.style.display = "none";
                 addBtn.checked = false;
+
             }
+        }
+
+        para.onmouseover=function(){
+            console.log("para hovered");
         }
        }
 
