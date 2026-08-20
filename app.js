@@ -41,7 +41,7 @@ function addItem(text){
         }
 
         para.onmouseover=function(){
-            console.log("para hovered");
+            console.log("para hovered: " + this.innerText);
         }
        }
 
