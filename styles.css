@@ -38,3 +38,7 @@ h1 {
 #confirm-btn {
     display: none;
 }
+
+#add-to-completed-btn {
+    display: none;
+}

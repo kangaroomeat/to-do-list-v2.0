@@ -1,10 +1,12 @@
 var toDoSection = document.querySelector(".to-do-section");
 var inProgressSection = document.querySelector(".in-progress-section");
+var completedSection = document.querySelector(".completed-section");
 var testBtn = document.querySelector(".test-button");
 var popUp1 = document.querySelector(".pop-up-1");
 var confirmBtn = document.getElementById("confirm-btn");
 var addBtn = document.getElementById("add");
 var removeBtn = document.getElementById("remove");
+var completedBtn = document.getElementById("add-to-completed-btn");
 
 function addItem(text){
     const para = document.createElement('p');
@@ -32,7 +34,7 @@ function addItem(text){
             if(addBtn.checked) {
                 //console.log("addBtn is slected");
                 inProgressSection.appendChild(para);
-                //para.setAttribute("class", "progressSectPara");
+                para.setAttribute("contentEditable", "false");
                 confirmBtn.style.display = "none";
                 popUp1.style.display = "none";
                 addBtn.checked = false;
@@ -40,8 +42,15 @@ function addItem(text){
             }
         }
 
-        para.onmouseover=function(){
-            console.log("para hovered: " + this.innerText);
+        para.ondblclick=function(){
+            
+            completedBtn.style.display = "block";
+
+            completedBtn.onclick=function(){
+                completedSection.appendChild(para);
+                completedBtn.style.display = "none";
+                
+            }
         }
        }
 
