@@ -37,8 +37,28 @@ h1 {
 
 #confirm-btn {
     display: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: purple;
+    color: white;
+    margin: 10px;
 }
 
 #add-to-completed-btn {
     display: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: purple;
+    color: white;
+    margin: 10px;
+}
+
+#confirm-btn:hover, #add-to-completed-btn:hover {
+    background-color: rgb(63, 3, 63);
 }
