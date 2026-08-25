@@ -49,7 +49,10 @@ function addItem(text){
             completedBtn.onclick=function(){
                 completedSection.appendChild(para);
                 completedBtn.style.display = "none";
-                
+
+                para.ondblclick=function(){
+                    console.log("hello");
+                }
             }
         }
        }
