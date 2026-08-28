@@ -10,11 +10,22 @@ main {
 h1 {
     background-color: pink;
     margin: 10px;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 5px;
+    padding: 10px;
+
 }
+
+
 
 .to-do-section, .in-progress-section, .completed-section {
     background-color: cyan;
     margin: 10px;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .test-button {
@@ -26,12 +37,19 @@ h1 {
     border: none;
     border-radius: 5px;
     margin: 10px;
+    text-transform: capitalize;
+    margin: 0 auto;
+    display: block;
 }
 
 .pop-up-1 {
     display: none;
     width: 30%;
     background-color: orange;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
 
 }
 
@@ -45,6 +63,9 @@ h1 {
     background-color: purple;
     color: white;
     margin: 10px;
+    text-transform: capitalize;
+    margin: 0 auto;
+    margin-top: 10px;
 }
 
 #add-to-completed-btn {
@@ -57,6 +78,8 @@ h1 {
     background-color: purple;
     color: white;
     margin: 10px;
+    text-transform: capitalize;
+    margin: 0 auto;
 }
 
 #confirm-btn:hover, #add-to-completed-btn:hover {
