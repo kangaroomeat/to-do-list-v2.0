@@ -101,3 +101,13 @@ h1 {
 .test-button:active {
     background-color: rgb(1, 85, 1);
 }
+
+#username-error, #password-error {
+    color: red;
+}
+
+.login-form {
+    width: 50%;
+    background-color: grey;
+    margin: 0 auto;
+}
