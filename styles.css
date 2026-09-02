@@ -104,10 +104,36 @@ h1 {
 
 #username-error, #password-error {
     color: red;
+    display: none;
 }
 
 .login-form {
     width: 50%;
-    background-color: grey;
+    background-color: rgb(168, 166, 166);
     margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#login-intro {
+    margin-bottom: 10px;
+
+}
+
+#login-btn {
+    margin: 0 auto;
+    padding: 10px;
+    color: white;
+    background-color: rgb(60, 60, 245);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#login-btn:hover {
+    background-color: rgb(44, 44, 190);
+
+    
 }

@@ -7,6 +7,12 @@ var confirmBtn = document.getElementById("confirm-btn");
 var addBtn = document.getElementById("add");
 var removeBtn = document.getElementById("remove");
 var completedBtn = document.getElementById("add-to-completed-btn");
+var username = document.getElementById("username");
+var password = document.getElementById("password");
+var loginBtn = document.getElementById("login-btn");
+const loginForm = document.querySelector(".login-form");
+const passwordError = document.getElementById("password-error");
+const usernameError = document.getElementById("username-error");
 
 function addItem(text){
     const para = document.createElement('p');
@@ -80,6 +86,39 @@ function addItem(text){
 
 }
 
+/*loginBtn.onclick=function(){
+    var usernameVal = username.value;
+    var passwordVal = password.value;
+
+    if(usernameVal == "david" && passwordVal == "1234" ) {
+        console.log("access granted");
+    } else {
+        console.log("wrong username or password");
+    }
+}*/
+
+loginForm.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const usernameVal = username.value;
+
+    if(!usernameVal) {
+        console.log("please enter username");
+        usernameError.style.display = "block";
+        return;
+    }
+
+    const passwordVal = password.value;
+
+    if(!passwordVal) {
+        console.log("please enter password");
+        passwordError.style.display = "block";
+        return;
+    }
+
+})
+
 
 
 
@@ -88,4 +127,6 @@ testBtn.onclick=function(){
     //console.log("works");
     addItem(" ");
 }
+
+
 

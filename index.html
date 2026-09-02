@@ -33,20 +33,26 @@
 
             <button id="add-to-completed-btn">add to completed</button>
 
-            <form class="login-form">
-                <p>Please enter username and pass word to access your to do list</p>
+            <form class="login-form" method="get" >
+                <p  id="login-intro">Please enter username and pass word to access your to do list</p>
 
-                <label for="username">username:</label>
-                <input type="text" id="username" name="username">
+                <div id="enter-username">
+                    <label for="username">username:</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                
                 
                 <p id="username-error">please enter username</p>
 
-                <label for="password">password:</label>
-                <input type="password" id="password" name="password">
+                <div id="enter-password">
+                    <label for="password">password:</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                
                 
                 <p id="password-error">please enter password</p>
 
-                <button type="submit">login</button>
+                <button type="submit" id="login-btn">login</button>
 
 
             </form>
