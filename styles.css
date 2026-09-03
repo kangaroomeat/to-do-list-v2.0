@@ -102,7 +102,7 @@ h1 {
     background-color: rgb(1, 85, 1);
 }
 
-#username-error, #password-error {
+#username-error, #password-error, #invalid-error {
     color: red;
     display: none;
 }

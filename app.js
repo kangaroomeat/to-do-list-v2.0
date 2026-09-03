@@ -13,6 +13,7 @@ var loginBtn = document.getElementById("login-btn");
 const loginForm = document.querySelector(".login-form");
 const passwordError = document.getElementById("password-error");
 const usernameError = document.getElementById("username-error");
+const invalidError = document.getElementById("invalid-error");
 
 function addItem(text){
     const para = document.createElement('p');
@@ -115,6 +116,17 @@ loginForm.addEventListener("submit", function(event) {
         console.log("please enter password");
         passwordError.style.display = "block";
         return;
+    }
+
+    if(!usernameVal && !passwordVal) {
+        console.log("boogaloo");
+    }
+
+    if(usernameVal === "dog" && passwordVal === "1234") {
+        console.log("access granted");
+    } else {
+        console.log("password or username is invalid");
+        invalidError.style.display = "block";
     }
 
 })
