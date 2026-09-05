@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>login page</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Login</h1>
+
+        <form class="login-form" method="get" >
+                <p  id="login-intro">Please enter username and pass word to access your to do list</p>
+
+                <div id="enter-username">
+                    <label for="username">username:</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                
+                
+                <p id="username-error">please enter username</p>
+
+                <div id="enter-password">
+                    <label for="password">password:</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                
+                
+                <p id="password-error">please enter password</p>
+
+                <p id="invalid-error">username or password is incorrect</p>
+
+                <button type="submit" id="login-btn">login</button>
+
+
+            </form>
+
+        <script src="login.js"></script>
+    </body>
+</html>
